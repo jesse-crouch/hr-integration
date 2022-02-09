@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 const port = 3044;
 
 app.post('/newHire', (req, res) => {
-    console.log('new hire requested');
+    console.log(req.body.key);
     res.sendStatus(200);
 });
 
